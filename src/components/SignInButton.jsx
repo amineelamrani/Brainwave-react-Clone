@@ -9,7 +9,7 @@
 //   );
 // }
 
-export default function SignInButton() {
+export default function SignInButton({ text, handleClick }) {
   // This is my idea on the multiple color gradient border
   // Now need to now how to make that one like the shape needed
   return (
@@ -17,8 +17,11 @@ export default function SignInButton() {
       <div className="flex max-w-sm rounded-xl pb-[2px] bg-gradient-to-r from-yellow-400 to-pink-400 shadow-lg">
         <div className="flex max-w-sm rounded-xl pl-[2px] bg-gradient-to-t from-yellow-400 to-green-400">
           <div className="flex max-w-sm rounded-xl pr-[2px] bg-gradient-to-b from-primary to-pink-400">
-            <button className="flex-1 uppercase font-bold text-white transition hover:text-primary bg-primary-content px-6 py-3 rounded-xl">
-              Sign in
+            <button
+              className="flex-1 uppercase font-bold text-white transition hover:text-primary bg-primary-content px-6 py-3 rounded-xl"
+              onClick={handleClick}
+            >
+              {text}
             </button>
           </div>
         </div>
