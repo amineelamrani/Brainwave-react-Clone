@@ -17,32 +17,9 @@ export default function SignInButton() {
       <div className="flex max-w-sm rounded-xl pb-[2px] bg-gradient-to-r from-yellow-400 to-pink-400 shadow-lg">
         <div className="flex max-w-sm rounded-xl pl-[2px] bg-gradient-to-t from-yellow-400 to-green-400">
           <div className="flex max-w-sm rounded-xl pr-[2px] bg-gradient-to-b from-primary to-pink-400">
-            <svg
-              width="120"
-              height="50"
-              className="uppercase text-white transition hover:text-primary rounded-b-xl rounded-tl-xl "
-            >
-              <a href="#">
-                <path
-                  d="M  0   0
-             L 90   00
-             L 180 40
-             L  330  1000
-             L   0 120
-             Z"
-                />
-
-                <text
-                  x="60"
-                  y="25"
-                  fill="#FFFFFF"
-                  text-anchor="middle"
-                  alignment-baseline="middle"
-                >
-                  I'm a link.
-                </text>
-              </a>
-            </svg>
+            <button className="flex-1 uppercase font-bold text-white transition hover:text-primary bg-primary-content px-6 py-3 rounded-xl">
+              Sign in
+            </button>
           </div>
         </div>
       </div>
@@ -55,33 +32,5 @@ export default function SignInButton() {
     //     </button>
     //   </div>
     // </div>
-  );
-}
-
-function svg_code() {
-  return (
-    <svg width="120" height="50">
-      <a href="#">
-        <path
-          d="M  0   0
-                   L 90   00
-                   L 180 40
-                   L  330  1000
-                   L   0 120
-                   Z"
-          fill="#007BFF"
-        />
-
-        <text
-          x="60"
-          y="25"
-          fill="#FFFFFF"
-          text-anchor="middle"
-          alignment-baseline="middle"
-        >
-          I'm a link.
-        </text>
-      </a>
-    </svg>
   );
 }
