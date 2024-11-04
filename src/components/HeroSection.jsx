@@ -38,9 +38,11 @@ export default function HeroSection() {
 
         <RobotHeroHolder />
 
-        <div>
-          <h2>Helping people create beautiful content at</h2>
-          <div>
+        <div className="hidden lg:flex lg:flex-col py-5 items-center">
+          <h2 className="uppercase font-bold text-neutral-content text-xl py-14">
+            Helping people create beautiful content at
+          </h2>
+          <div className="flex justify-between w-full gap-10">
             <img src={yourlogo} alt="" />
             <img src={yourlogo} alt="" />
             <img src={yourlogo} alt="" />
