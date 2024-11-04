@@ -15,7 +15,7 @@ export default function HeroSection() {
     <div className="flex flex-col ">
       <div
         id="top-layer text-and-image"
-        className="py-36 flex flex-col items-center px-14 md:px-24 lg:px-36 justify-center"
+        className="pt-36 flex flex-col items-center px-14 md:px-24 lg:px-36 justify-center"
       >
         <h1 className="text-white text-7xl font-bold text-center text-wrap  leading-tight ">
           Explore the Possibilites of AI Chatting with{" "}
