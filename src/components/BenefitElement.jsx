@@ -1,31 +1,53 @@
 import robotImage from "../assets/benefits/image-2.png";
-import card1 from "../assets/benefits/card-1.svg";
+import { useState } from "react";
 
-export default function BenefitElement() {
-  // we will have a div with background the robot + a div inside it with the borderimage as its background + a div inside it for the text
-  // the div of the borderImage will have an opacity that changes depending on the hover effect (when hovering it lowers the opacity to show what behind)
+export default function BenefitElement({ title, cardId, text, iconId }) {
+  const [hovering, setHovering] = useState(false);
+
+  function handleHover() {
+    setHovering(true);
+  }
+
+  function handleLeave() {
+    setHovering(false);
+  }
+
   return (
     <div
       id="bg-form-border"
-      className="relative min-w-96 w-full md:w-1/2 lg:w-1/3 bg-cover bg-no-repeat bg-center rounded-3xl"
+      className="relative bg-cover bg-no-repeat bg-center rounded-3xl min-h-96 mx-7 my-5 h-[383.993px] w-[402.292px]"
       style={{
-        backgroundImage: `url(${card1})`,
+        backgroundImage: `url(${cardId})`,
         clipPath: "polygon(90% 0, 100% 13%, 100% 100%, 0 100%, 0 0)",
       }}
     >
       <div
         id="bg-robot"
-        className="bg-cover bg-no-repeat bg-center rounded-3xl opacity-0 hover:opacity-20 min-h-96 transition ease-in duration-600"
+        className={`bg-cover bg-no-repeat bg-center rounded-3xl z-20 ${
+          hovering ? "opacity-20" : "opacity-0"
+        } min-h-96 transition ease-in duration-600 `}
         style={{ backgroundImage: `url(${robotImage})` }}
       ></div>
 
-      <div id="text-here" className="p-10 top-0 left-0 absolute">
-        <h1 className="text-3xl text-white pb-5">Ask anything</h1>
-        <p className="text-xl">
-          Lets users quickly find answers to their questions without having to
-          search through multiple sources
-        </p>
+      <div
+        id="text-here"
+        className="p-10 top-0 left-0 absolute right-0"
+        onMouseEnter={handleHover}
+        onMouseLeave={handleLeave}
+      >
+        <h1 className="text-3xl text-white pb-5">{title}</h1>
+        <p className="text-xl">{text}</p>
+        <div className="flex  justify-between pt-24 items-center">
+          <img src={iconId} alt="" />
+          <div>
+            <h2 className="font-bold text-white uppercase">
+              Explore more <span className="pl-3 text-xl">{" >"}</span>
+            </h2>
+          </div>
+        </div>
       </div>
     </div>
   );
 }
+
+// h-[383.993px] w-[402.292px]
