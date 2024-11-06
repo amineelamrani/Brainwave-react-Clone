@@ -37,7 +37,7 @@ export default function BenefitElement({ title, cardId, text, iconId }) {
       >
         <h1 className="text-3xl text-white pb-5">{title}</h1>
         <p className="text-xl">{text}</p>
-        <div className="flex  justify-between pt-24 items-center">
+        <div className="flex justify-between pb-10 items-center absolute inset-x-0 px-12 top-72">
           <img src={iconId} alt="" />
           <div>
             <h2 className="font-bold text-white uppercase">
