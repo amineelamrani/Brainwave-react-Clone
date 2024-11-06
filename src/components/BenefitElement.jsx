@@ -7,21 +7,24 @@ export default function BenefitElement() {
   return (
     <div
       id="bg-form-border"
-      className="border w-1/2 bg-cover bg-no-repeat bg-center p-5"
-      style={{ backgroundImage: `url(${card1})` }}
+      className="relative min-w-96 w-full md:w-1/2 lg:w-1/3 bg-cover bg-no-repeat bg-center rounded-3xl"
+      style={{
+        backgroundImage: `url(${card1})`,
+        clipPath: "polygon(90% 0, 100% 13%, 100% 100%, 0 100%, 0 0)",
+      }}
     >
       <div
         id="bg-robot"
-        className="bg-cover bg-no-repeat bg-center"
+        className="bg-cover bg-no-repeat bg-center rounded-3xl opacity-0 hover:opacity-20 min-h-96 transition ease-in duration-600"
         style={{ backgroundImage: `url(${robotImage})` }}
-      >
-        <div id="text-here" className="p-10 min-h-80">
-          <h1 className="text-2xl text-white font-bold pb-5">Ask anything</h1>
-          <p className="">
-            Lets users quickly find answers to their questions without having to
-            search through multiple sources
-          </p>
-        </div>
+      ></div>
+
+      <div id="text-here" className="p-10 top-0 left-0 absolute">
+        <h1 className="text-3xl text-white pb-5">Ask anything</h1>
+        <p className="text-xl">
+          Lets users quickly find answers to their questions without having to
+          search through multiple sources
+        </p>
       </div>
     </div>
   );
