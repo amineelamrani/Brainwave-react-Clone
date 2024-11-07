@@ -26,6 +26,7 @@ export default function BenefitsSection() {
           text="The app uses natural language processing to understand user queries and provide accurate and relevant responses."
           cardId={card2}
           iconId={icon2}
+          styled={true}
         />
         <BenefitElement
           title="Connect everywhere"
@@ -38,6 +39,7 @@ export default function BenefitsSection() {
           text="Lets users quickly find answers to their questions without having to search through multiple sources."
           cardId={card4}
           iconId={icon4}
+          styled={true}
         />
         <BenefitElement
           title="Ask anything"
@@ -47,7 +49,7 @@ export default function BenefitsSection() {
         />
         <BenefitElement
           title="Improve everyday"
-          text="Lets users quickly find answers to their questions without having to search through multiple sources."
+          text="The app uses natural language processing to understand user queries and provide accurate and relevant responses."
           cardId={card2}
           iconId={icon2}
         />
