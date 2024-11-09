@@ -1,10 +1,12 @@
 import check from "../assets/check.svg";
 import CircularPresentation from "./CircularPresentation";
 import SignInButton from "./SignInButton";
+import curve from "../assets/collaboration/curve-1.svg";
+import curve2 from "../assets/collaboration/curve-2.svg";
 
 export default function Collaboration() {
   return (
-    <div className="flex flex-col lg:flex-row gap-24 w-full py-24 px-14 md:px-24 lg:px-36">
+    <div className="relative flex flex-col lg:flex-row gap-24 w-full py-24 px-14 md:px-24 lg:px-36">
       <div id="Seamless-collaboration" className="w-full lg:w-1/2 py-10">
         <h1 className="text-5xl text-white font-bold pb-10">
           AI Chat App for seamless collaboration
@@ -45,6 +47,16 @@ export default function Collaboration() {
           <CircularPresentation />
         </div>
       </div>
+      <img
+        src={curve}
+        alt=""
+        className="hidden lg:block absolute bottom-80 right-1/2"
+      />
+      <img
+        src={curve2}
+        alt=""
+        className="hidden lg:block absolute bottom-[430px] right-0"
+      />
     </div>
   );
 }
