@@ -9,16 +9,34 @@
 //   );
 // }
 
-export default function SignInButton({ text, handleClick }) {
+export default function SignInButton({ text, handleClick, full = false }) {
   // This is my idea on the multiple color gradient border
   // Now need to now how to make that one like the shape needed
   return (
-    <div className="flex max-w-sm rounded-xl pt-[2px] bg-gradient-to-r from-green-400 from-0% via-sky-500 via-30% to-primary to-90%">
-      <div className="flex max-w-sm rounded-xl pb-[2px] bg-gradient-to-r from-yellow-400 to-pink-400 shadow-lg">
-        <div className="flex max-w-sm rounded-xl pl-[2px] bg-gradient-to-t from-yellow-400 to-green-400">
-          <div className="flex max-w-sm rounded-xl pr-[2px] bg-gradient-to-b from-primary to-pink-400">
+    <div
+      className={`flex max-w-sm ${
+        full ? "rounded-full" : "rounded-xl"
+      }  pt-[2px] bg-gradient-to-r from-green-400 from-0% via-sky-500 via-30% to-primary to-90%`}
+    >
+      <div
+        className={`flex max-w-sm ${
+          full ? "rounded-full" : "rounded-xl"
+        } pb-[2px] bg-gradient-to-r from-yellow-400 to-pink-400 shadow-lg`}
+      >
+        <div
+          className={`flex max-w-sm ${
+            full ? "rounded-full" : "rounded-xl"
+          } pl-[2px] bg-gradient-to-t from-yellow-400 to-green-400`}
+        >
+          <div
+            className={`flex max-w-sm ${
+              full ? "rounded-full" : "rounded-xl"
+            } pr-[2px] bg-gradient-to-b from-primary to-pink-400`}
+          >
             <button
-              className="flex-1 uppercase font-bold text-white transition hover:text-primary bg-primary-content px-6 py-3 rounded-xl"
+              className={`flex-1 uppercase font-bold text-white transition hover:text-primary bg-primary-content px-6 ${
+                full ? "rounded-full py-6" : "rounded-xl py-3"
+              }`}
               onClick={handleClick}
             >
               {text}
