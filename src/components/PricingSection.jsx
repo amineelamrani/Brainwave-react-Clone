@@ -23,10 +23,40 @@ export default function PricingSection() {
           id="pricing-plans-section"
           className="w-full flex flex-col md:flex-row gap-2"
         >
-          <PricingElement plan="Basic" price={0} />
-          <PricingElement plan="Premium" price={9.99} />
-          <PricingElement plan="Enterprise" price={"X"} />
+          <PricingElement
+            plan="Basic"
+            price={0}
+            description="AI chatbot, personalized recommendations"
+            features={[
+              "An AI chatbot that can understand your queries",
+              "Personalized recommendations based on your preferences",
+              "Ability to explore the app and its features without any cost",
+            ]}
+          />
+          <PricingElement
+            plan="Premium"
+            price={9.99}
+            description="Advanced AI chatbot, priority support, analytics dashboard"
+            features={[
+              "An advanced AI chatbot that can understand complex queries",
+              "An analytics dashboard to track your conversations",
+              "Priority support to solve issues quickly",
+            ]}
+          />
+          <PricingElement
+            plan="Enterprise"
+            price={"X"}
+            description="Custom AI chatbot, advanced analytics, dedicated account"
+            features={[
+              "An AI chatbot that can understand your queries",
+              "Personalized recommendations based on your preferences",
+              "Ability to explore the app and its features without any cost",
+            ]}
+          />
         </div>
+        <p className="uppercase text-center my-10 text-white font-bold underline underline-offset-4 cursor-pointer">
+          SEE the full details
+        </p>
       </div>
     </div>
   );

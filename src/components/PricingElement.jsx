@@ -1,10 +1,9 @@
 import check from "../assets/check.svg";
 import ContactUsButton from "./ContactUsButton";
-import SignInButton from "./SignInButton";
 
-export default function PricingElement({ plan, price }) {
+export default function PricingElement({ plan, price, description, features }) {
   return (
-    <div className="w-full md:w-1/3 border-[1px] border-gray-500 rounded-2xl px-5 py-14">
+    <div className="w-full md:w-1/3 border-[1px] border-gray-500 rounded-2xl px-5 py-8">
       <h1
         className={`${plan === "Basic" && "text-yellow-500"} ${
           plan === "Premium" && "text-[#853cfa]"
@@ -12,9 +11,7 @@ export default function PricingElement({ plan, price }) {
       >
         {plan}
       </h1>
-      <p className="text-neutral-content font-bold pb-8">
-        AI chatbot, personalized recommendations
-      </p>
+      <p className="text-neutral-content font-bold pb-8">{description}</p>
       <h3
         className={`text-4xl text-white font-bold pb-8 flex items-center ${
           plan === "Enterprise" && "invisible"
@@ -32,21 +29,15 @@ export default function PricingElement({ plan, price }) {
       <ul>
         <li className="flex items-start gap-4 py-5 border-t-[1px] border-gray-500">
           <img src={check} alt="" />
-          <h3 className="text-white">
-            An AI chatbot that can understand your queries
-          </h3>
+          <h3 className="text-white">{features[0]}</h3>
         </li>
         <li className="flex items-start gap-4 py-5 border-t-[1px] border-gray-500">
           <img src={check} alt="" />
-          <h3 className="text-white">
-            Personalized recommendations based on your preferences
-          </h3>
+          <h3 className="text-white">{features[1]}</h3>
         </li>
         <li className="flex items-start gap-4 py-5 border-t-[1px] border-gray-500">
           <img src={check} alt="" />
-          <h3 className="text-white">
-            Ability to explore the app and its features without any cost
-          </h3>
+          <h3 className="text-white">{features[2]}</h3>
         </li>
       </ul>
     </div>
