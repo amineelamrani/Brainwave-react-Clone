@@ -2,6 +2,7 @@ import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
 import BenefitsSection from "./components/BenefitsSection";
 import Collaboration from "./components/Collaboration";
+import ServicesSection from "./components/ServicesSection";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
           <HeroSection />
           <BenefitsSection />
           <Collaboration />
+          <ServicesSection />
         </div>
       </div>
     </>
