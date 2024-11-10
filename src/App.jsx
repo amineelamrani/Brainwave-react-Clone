@@ -4,6 +4,7 @@ import BenefitsSection from "./components/BenefitsSection";
 import Collaboration from "./components/Collaboration";
 import ServicesSection from "./components/ServicesSection";
 import PricingSection from "./components/PricingSection";
+import RoadMap from "./components/RoadMap";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Collaboration />
           <ServicesSection />
           <PricingSection />
+          <RoadMap />
         </div>
       </div>
     </>
