@@ -3,6 +3,12 @@ import service2 from "../assets/services/service-2.png";
 import gradientEffect from "../assets/gradient.png";
 import check from "../assets/check.svg";
 import ChatBubbleWing from "../assets/svg/ChatBubbleWing";
+import recording2 from "../assets/recording-01.svg";
+import recording1 from "../assets/recording-03.svg";
+import disc from "../assets/disc-02.svg";
+import chromeCast from "../assets/chrome-cast.svg";
+import sliders from "../assets/sliders-04.svg";
+import SignInButton from "./SignInButton";
 
 export default function ServicesSection() {
   return (
@@ -83,15 +89,37 @@ export default function ServicesSection() {
 
         <div
           id="right-side"
-          className="w-full lg:w-1/2 h-[680px] rounded-2xl bg-base-100"
+          className="w-full lg:w-1/2 h-[680px] rounded-2xl bg-base-100 flex flex-col p-5"
         >
-          <div>
-            <h1>Video generation</h1>
-            <p>
+          <div id="top-part-video-gen" className="w-full h-1/2 px-5">
+            <h1 className="text-3xl text-white pt-14 pb-5">Video generation</h1>
+            <p className="text-xl pb-5">
               The world’s most powerful AI photo and video art generation
               engine. What will you create?
             </p>
-            <div></div>
+            <div className="flex justify-between py-5">
+              <img
+                src={recording1}
+                alt=""
+                className="bg-neutral p-4 rounded-xl"
+              />
+              <img
+                src={recording2}
+                alt=""
+                className="bg-neutral p-4 rounded-xl"
+              />
+              <SignInButton text={<img src={disc} alt="" />} disc={true} />
+
+              <img
+                src={chromeCast}
+                alt=""
+                className="bg-neutral p-4 rounded-xl"
+              />
+              <img src={sliders} alt="" className="bg-neutral p-4 rounded-xl" />
+            </div>
+          </div>
+          <div id="bottom-part-video-gen" className="w-full h-1/2 bg-green-500">
+            <img src="" alt="" />
           </div>
         </div>
       </div>

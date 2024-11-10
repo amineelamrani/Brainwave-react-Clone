@@ -9,7 +9,12 @@
 //   );
 // }
 
-export default function SignInButton({ text, handleClick, full = false }) {
+export default function SignInButton({
+  text,
+  handleClick,
+  full = false,
+  disc = false,
+}) {
   // This is my idea on the multiple color gradient border
   // Now need to now how to make that one like the shape needed
   return (
@@ -34,9 +39,9 @@ export default function SignInButton({ text, handleClick, full = false }) {
             } pr-[2px] bg-gradient-to-b from-primary to-pink-400`}
           >
             <button
-              className={`flex-1 uppercase font-bold text-white transition hover:text-primary bg-primary-content px-6 ${
+              className={`flex-1 uppercase font-bold text-white transition hover:text-primary  ${
                 full ? "rounded-full py-6" : "rounded-xl py-3"
-              }`}
+              } ${disc ? "px-4 bg-base-100" : "px-6 bg-primary-content"}`}
               onClick={handleClick}
             >
               {text}
