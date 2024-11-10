@@ -1,5 +1,6 @@
 import service1 from "../assets/services/service-1.png";
 import service2 from "../assets/services/service-2.png";
+import service3 from "../assets/services/service-3.png";
 import gradientEffect from "../assets/gradient.png";
 import check from "../assets/check.svg";
 import ChatBubbleWing from "../assets/svg/ChatBubbleWing";
@@ -118,9 +119,11 @@ export default function ServicesSection() {
               <img src={sliders} alt="" className="bg-neutral p-4 rounded-xl" />
             </div>
           </div>
-          <div id="bottom-part-video-gen" className="w-full h-1/2 bg-green-500">
-            <img src="" alt="" />
-          </div>
+          <div
+            id="bottom-part-video-gen"
+            className="w-full h-1/2 bg-primary-content bg-cover bg-no-repeat bg-center rounded-2xl"
+            style={{ backgroundImage: `url(${service3})` }}
+          ></div>
         </div>
       </div>
     </div>
