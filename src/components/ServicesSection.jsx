@@ -40,7 +40,7 @@ export default function ServicesSection() {
           alt=""
           className="absolute top-0 bottom-0 left-0 w-full md:w-1/2 h-full z-0"
         />
-        <div className="py-44 z-20 pr-0 md:pr-16 flex w-3/4 md:w-5/12 flex-col">
+        <div className="py-32 md:py-44 z-20 pr-0 md:pr-16 flex w-3/4 md:w-5/12 flex-col">
           <h1 className="text-3xl text-white font-bold pb-5">Smartest AI</h1>
           <p className="text-xl  pb-5">
             Brainwave unlocks the potential of AI-powered applications
