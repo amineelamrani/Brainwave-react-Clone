@@ -10,6 +10,8 @@ import disc from "../assets/disc-02.svg";
 import chromeCast from "../assets/chrome-cast.svg";
 import sliders from "../assets/sliders-04.svg";
 import SignInButton from "./SignInButton";
+import play from "../assets/play.svg";
+import brainwaveLogo from "../assets/brainwave-symbol-white.svg";
 
 export default function ServicesSection() {
   return (
@@ -121,9 +123,35 @@ export default function ServicesSection() {
           </div>
           <div
             id="bottom-part-video-gen"
-            className="w-full h-1/2 bg-primary-content bg-cover bg-no-repeat bg-center rounded-2xl"
+            className="w-full h-1/2 bg-primary-content bg-cover bg-no-repeat bg-center rounded-2xl relative"
             style={{ backgroundImage: `url(${service3})` }}
-          ></div>
+          >
+            <div className="flex p-5 items-center gap-3 absolute bottom-0 right-0 left-0">
+              <img src={play} alt="" />
+              <progress
+                className="progress progress-primary h-[3px] bg-white "
+                value="70"
+                max="100"
+              ></progress>
+            </div>
+            <div className="absolute top-10 left-10 md:left-14 bg-gray-800 text-white mx-5 p-4 w-72 rounded-t-2xl rounded-br-2xl flex">
+              <h1 className="text-xl pb-4">Video generated!</h1>
+              <p className="absolute bottom-1 right-1 text-xs px-2 py-1 text-slate-400">
+                JUST NOW
+              </p>
+              <div
+                className="absolute bottom-0 -left-6"
+                style={{ transform: "scaleX(-1)" }}
+              >
+                <ChatBubbleWing fill="rgba(31,41,55,1)" />
+              </div>
+              <img
+                src={brainwaveLogo}
+                alt=""
+                className="absolute -bottom-5 bg-[#6d28d9] w-10 p-1 rounded-xl"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

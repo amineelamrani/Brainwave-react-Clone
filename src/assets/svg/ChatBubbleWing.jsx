@@ -1,10 +1,11 @@
-const ChatBubbleWing = ({ className, pathClassName }) => {
+const ChatBubbleWing = ({ className, pathClassName, fill = "black" }) => {
   return (
     <svg
       className={`${className || ""}`}
       xmlns="http://www.w3.org/2000/svg"
       width="26"
       height="37"
+      fill={fill}
     >
       <path
         className={`${pathClassName || ""}`}
