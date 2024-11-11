@@ -30,7 +30,7 @@ export default function NavBar() {
   }
 
   return (
-    <header className="backdrop-blur-xl py-7 px-10 h-24 w-full flex items-center justify-between bg-primary-content/50 border-b-[1px] border-gray-500 fixed top-0 z-50">
+    <header className="backdrop-blur-xl py-7 px-10 h-24 w-full flex items-center justify-between bg-primary-content/50 border-b-[1px] border-gray-500 fixed top-0 z-50 text-xs">
       <div className="">
         <a href="">
           <img src={brainwave} alt="" className="min-w-40" />

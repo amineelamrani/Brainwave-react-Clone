@@ -39,7 +39,7 @@ export default function SignInButton({
             } pr-[2px] bg-gradient-to-b from-primary to-pink-400`}
           >
             <button
-              className={`flex-1 uppercase font-bold text-white transition hover:text-primary  ${
+              className={`flex-1 uppercase font-bold text-base text-white transition hover:text-primary  ${
                 full ? "rounded-full py-6" : "rounded-xl py-3"
               } ${disc ? "px-4 bg-base-100" : "px-6 bg-primary-content"}`}
               onClick={handleClick}

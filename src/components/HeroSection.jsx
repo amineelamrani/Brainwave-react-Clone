@@ -2,6 +2,8 @@ import React from "react";
 import yourlogo from "../assets/yourlogo.svg";
 import curve from "../assets/hero/curve.png";
 import RobotHeroHolder from "./RobotHeroHolder";
+import heroBg from "../assets/hero/hero-background.jpg";
+import stars from "../assets/pricing/stars.svg";
 
 /*   Outline it :
 1. we will create that text : a fixed pt + a z-20 + immediately that image  of the robot
@@ -12,10 +14,10 @@ import RobotHeroHolder from "./RobotHeroHolder";
 
 export default function HeroSection() {
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col relative items-center">
       <div
         id="top-layer text-and-image"
-        className="pt-36 flex flex-col items-center px-14 md:px-24 lg:px-36 justify-center"
+        className="pt-36 flex flex-col items-center px-14 md:px-24 lg:px-36 justify-center z-30"
       >
         <h1 className="text-white text-7xl font-bold text-center text-wrap  leading-tight ">
           Explore the Possibilites of AI Chatting with{" "}
@@ -48,6 +50,32 @@ export default function HeroSection() {
             <img src={yourlogo} alt="" />
             <img src={yourlogo} alt="" />
             <img src={yourlogo} alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="robot-background"
+        className="absolute top-0 bottom-0 left-0 right-0 z-0"
+      >
+        <img src={heroBg} alt="" />
+      </div>
+      <div
+        id="stars-background-holder"
+        className="hidden md:block absolute top-36 z-20"
+      >
+        <img src={stars} alt="" />
+      </div>
+
+      <div
+        id="orbite-background-holder"
+        className="absolute top-14 z-10 border-[1px] p-24 border-gray-500 rounded-full opacity-45"
+      >
+        <div className="border-[1px] p-44 border-gray-500 rounded-full">
+          <div className="border-[1px] p-44 border-gray-500 rounded-full">
+            <div className="border-[1px] p-24 border-gray-500 rounded-full">
+              <div className="w-14 h-14 border-[1px] p-24 border-gray-500 rounded-full"></div>
+            </div>
           </div>
         </div>
       </div>
