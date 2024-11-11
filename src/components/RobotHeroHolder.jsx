@@ -19,7 +19,7 @@ export default function RobotHeroHolder() {
         <div className="h-[27rem] backdrop-blur-3xl bg-primary-content/80  mx-10 translate-y-[-29rem] rounded-b-3xl"></div>
       </div>
       <div
-        className="absolute top-10 left-1 right-1 h-[25rem] bg-cover bg-no-repeat bg-top rounded-b-3xl"
+        className="absolute top-10 left-1 right-1 h-[25rem] bg-cover bg-no-repeat bg-center rounded-b-3xl"
         style={{ backgroundImage: `url(${robotImg})` }}
       ></div>
       {/* <div className="absolute top-0 "></div> */}
