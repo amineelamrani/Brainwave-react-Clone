@@ -31,14 +31,14 @@ export default function RobotHeroHolder() {
         className="absolute flex justify-center items-end top-10 left-1 right-1 h-[25rem] bg-cover bg-no-repeat bg-center rounded-b-3xl"
         style={{ backgroundImage: `url(${robotImg})` }}
       >
-        <div className="flex gap-3 bg-black/70 w-96 px-5 py-3 rounded-3xl mb-8 text-white text-xl items-center">
+        <div className="flex gap-3 bg-black/70 w-72 lg:w-96 px-5 py-3 rounded-3xl mb-8 text-white text-xl items-center">
           <img src={loading01} alt="" className="h-5" />
           <p>AI is generating</p>
         </div>
 
         <div
           id="home-file-search-icons"
-          className="absolute top-1/4 -left-14 flex gap-8 px-8 py-7 rounded-2xl backdrop-blur-md bg-gray-500/20 items-center border-[1px] border-gray-500/20"
+          className="absolute top-1/4 -left-14 hidden lg:flex gap-8 px-8 py-7 rounded-2xl backdrop-blur-md bg-gray-500/20 items-center border-[1px] border-gray-500/20"
         >
           <img src={home} alt="" />
           <img src={file} alt="" />
@@ -48,7 +48,7 @@ export default function RobotHeroHolder() {
 
         <div
           id="code-generation-icon-section"
-          className="absolute top-1/4 -right-14 flex gap-4 px-5 py-5 rounded-2xl backdrop-blur-md bg-gray-500/20 items-center border-[1px] border-gray-500/20"
+          className="hidden lg:flex absolute top-1/4 -right-14 gap-4 px-5 py-5 rounded-2xl backdrop-blur-md bg-gray-500/20 items-center border-[1px] border-gray-500/20"
         >
           <img src={notifImage1} alt="" className="h-14 rounded-xl" />
           <div className="flex flex-col gap-1">
