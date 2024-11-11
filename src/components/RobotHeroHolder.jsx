@@ -38,7 +38,7 @@ export default function RobotHeroHolder() {
 
         <div
           id="home-file-search-icons"
-          className="absolute top-1/4 -left-14 hidden lg:flex gap-8 px-8 py-7 rounded-2xl backdrop-blur-md bg-gray-500/20 items-center border-[1px] border-gray-500/20"
+          className="absolute top-1/2 -left-14 hidden lg:flex gap-8 px-8 py-7 rounded-2xl backdrop-blur-md bg-gray-500/20 items-center border-[1px] border-gray-500/20"
         >
           <img src={home} alt="" />
           <img src={file} alt="" />

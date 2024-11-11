@@ -2,11 +2,17 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="footer bg-primary-content text-neutral-content items-center p-4 border-t-[1px] border-gray-500">
-      <aside className="grid-flow-col items-center">
+    <footer className="footer flex justify-between bg-primary-content text-neutral-content items-center p-4 border-t-[1px] border-gray-500/50 relative">
+      <p className="hidden md:flex absolute -top-4 -left-2 text-xl font-bold">
+        +
+      </p>
+      <p className="hidden md:flex absolute -top-4 -right-2 text-xl font-bold">
+        +
+      </p>
+      <aside className=" items-center">
         <p>© {new Date().getFullYear()} - All right reserved</p>
       </aside>
-      <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+      <nav className="flex gap-4 place-self-center justify-self-end">
         <a>
           <svg
             xmlns="http://www.w3.org/2000/svg"

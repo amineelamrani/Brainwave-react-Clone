@@ -10,7 +10,13 @@ import icon4 from "../assets/benefits/icon-4.svg";
 
 export default function BenefitsSection() {
   return (
-    <div className="flex flex-col items-center py-14 px-14 md:px-24 lg:px-36 justify-center">
+    <div className="flex flex-col items-center py-14 px-14 md:px-24 lg:px-36 justify-center border-b-[1px] border-gray-500/50 relative">
+      <p className="hidden md:flex absolute -bottom-3 -left-2 text-xl font-bold">
+        +
+      </p>
+      <p className="hidden md:flex absolute -bottom-3 -right-2 text-xl font-bold">
+        +
+      </p>
       <h1 className="text-white text-3xl lg:text-7xl font-bold text-center text-wrap leading-tight pb-10 md:mx-40 lg:mx-64">
         Chat Smarter, Not Harder with Brainwave
       </h1>
