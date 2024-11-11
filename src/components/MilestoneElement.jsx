@@ -20,10 +20,10 @@ export default function MilestoneElement({
           <div className="rounded-3xl p-10 flex flex-col relative bg-gradient-to-t from-black/50 to-black/0">
             <div className="flex justify-between">
               <p className="uppercase">[ may 2023 ]</p>
-              <p className="flex bg-white px-3 py-1 rounded-lg text-black gap-2">
+              <div className="flex bg-white px-3 py-1 rounded-lg text-black gap-2">
                 <img src={check} alt="" />
                 <p>{progress}</p>
-              </p>
+              </div>
             </div>
             <img src={image} alt="" className="w-full py-8" />
             <div>
@@ -42,7 +42,7 @@ export default function MilestoneElement({
         <div className="rounded-3xl border-[1px] border-gray-500 p-10 flex flex-col relative bg-gradient-to-t from-black/50 to-black/0">
           <div className="flex justify-between">
             <p className="uppercase">[ may 2023 ]</p>
-            <p className="flex bg-white px-3 py-1 rounded-lg text-black gap-2">
+            <div className="flex bg-white px-3 py-1 rounded-lg text-black gap-2">
               <img src={check} alt="" className={`${wrapIt ? "hidden" : ""}`} />
               <img
                 src={loading}
@@ -50,7 +50,7 @@ export default function MilestoneElement({
                 className={`${wrapIt ? "" : "hidden"}`}
               />
               <p>{progress}</p>
-            </p>
+            </div>
           </div>
           <img src={image} alt="" className="w-full py-8" />
           <div>
