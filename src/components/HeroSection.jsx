@@ -13,11 +13,8 @@ import stars from "../assets/pricing/stars.svg";
 */
 
 export default function HeroSection() {
-  function handleScroll() {
-    console.log("ee");
-  }
   return (
-    <div className="relative" onWheel={handleScroll}>
+    <div className="relative">
       <p className="hidden md:flex absolute -top-4 -left-2 text-xl z-40 font-bold">
         +
       </p>
@@ -70,6 +67,7 @@ export default function HeroSection() {
         >
           <img src={heroBg} alt="" className="w-full" />
         </div>
+
         <div
           id="stars-background-holder"
           className="hidden md:flex absolute top-0 h-screen z-20 w-full lg:border-b-[1px] lg:border-gray-500/50"
