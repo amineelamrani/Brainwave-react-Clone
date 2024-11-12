@@ -14,17 +14,17 @@ import stars from "../assets/pricing/stars.svg";
 
 export default function HeroSection() {
   return (
-    <div className="relative">
+    <div className="mx-auto relative">
       <p className="hidden md:flex absolute -top-4 -left-2 text-xl z-40 font-bold">
         +
       </p>
       <p className="hidden md:flex absolute -top-4 -right-2 text-xl z-40 font-bold">
         +
       </p>
-      <div className="flex flex-col relative items-center overflow-y-clip">
+      <div className="mx-auto flex flex-col relative items-center overflow-y-clip ">
         <div
           id="top-layer text-and-image"
-          className="pt-36 flex flex-col items-center px-14 md:px-24 lg:px-36 justify-center z-30"
+          className="container pt-36 flex flex-col items-center px-14 md:px-24 lg:px-36 justify-center z-30 "
         >
           <h1 className="text-white text-7xl font-bold text-center text-wrap  leading-tight ">
             Explore the Possibilites of AI Chatting with{" "}
@@ -67,6 +67,8 @@ export default function HeroSection() {
         >
           <img src={heroBg} alt="" className="w-full" />
         </div>
+
+        <div className="absolute top-0 right-0 left-0 z-10 bottom-0 bg-gradient-to-t from-primary-content/80 to-transparent"></div>
 
         <div
           id="stars-background-holder"

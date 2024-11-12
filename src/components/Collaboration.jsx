@@ -6,7 +6,7 @@ import curve2 from "../assets/collaboration/curve-2.svg";
 
 export default function Collaboration() {
   return (
-    <div className="relative flex flex-col lg:flex-row gap-24 w-full py-24 px-14 md:px-24 lg:px-36">
+    <div className="container relative flex flex-col lg:flex-row gap-24 mx-auto w-full py-24 px-14 md:px-24 lg:px-36">
       <div id="Seamless-collaboration" className="w-full lg:w-1/2 py-10">
         <h1 className="text-5xl text-white font-bold pb-10">
           AI Chat App for seamless collaboration

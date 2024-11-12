@@ -4,7 +4,7 @@ import PricingElement from "./PricingElement";
 
 export default function PricingSection() {
   return (
-    <div className="w-full flex flex-col justify-center px-10">
+    <div className="container mx-auto w-full flex flex-col justify-center px-10">
       <div
         id="Pricing-Picture-shown-large-screen"
         className="hidden lg:flex justify-center py-24"

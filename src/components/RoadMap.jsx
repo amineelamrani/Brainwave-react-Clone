@@ -8,7 +8,7 @@ import image4 from "../assets/roadmap/image-4.png";
 
 export default function RoadMap() {
   return (
-    <div className="w-full px-10 pb-24 flex flex-col items-center">
+    <div className="container mx-auto w-full px-10 pb-24 flex flex-col items-center">
       <p className="text-xl text-center pt-10">[ ready to get started ]</p>
       <h1 className="text-white text-3xl lg:text-7xl text-center text-wrap leading-tight pt-5 pb-10">
         What we're working on
