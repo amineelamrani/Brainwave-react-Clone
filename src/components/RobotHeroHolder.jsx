@@ -19,7 +19,6 @@ import { useRef } from "react";
 export default function RobotHeroHolder() {
   const myRef = useRef(null);
   const myRef2 = useRef(null);
-  const rootElement = document.getElementById("root");
   window.onscroll = scrollingEffect;
 
   function scrollingEffect() {
@@ -27,12 +26,7 @@ export default function RobotHeroHolder() {
     if (y < 500) {
       myRef.current.style.top = `${y / 4 + 50}px`;
       myRef2.current.style.top = `${y / 4 + 150}px`;
-      console.log(myRef.current.style.top);
     }
-    // const pixelsCount = (y + 9800) / 98;
-    // console.log(pixelsCount);
-
-    // console.log(y);
   }
 
   return (
