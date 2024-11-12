@@ -8,6 +8,7 @@ import notifImage1 from "../assets/notification/image-1.png";
 import notifImage2 from "../assets/notification/image-2.png";
 import notifImage3 from "../assets/notification/image-3.png";
 import notifImage4 from "../assets/notification/image-4.png";
+import { useRef } from "react";
 
 // How to do it :
 // create div 1 => gradient
@@ -16,6 +17,24 @@ import notifImage4 from "../assets/notification/image-4.png";
 //create a div with an absolute position and put it at the top of the divs
 
 export default function RobotHeroHolder() {
+  const myRef = useRef(null);
+  const myRef2 = useRef(null);
+  const rootElement = document.getElementById("root");
+  window.onscroll = scrollingEffect;
+
+  function scrollingEffect() {
+    let y = document.documentElement.scrollTop;
+    if (y < 500) {
+      myRef.current.style.top = `${y / 4 + 50}px`;
+      myRef2.current.style.top = `${y / 4 + 150}px`;
+      console.log(myRef.current.style.top);
+    }
+    // const pixelsCount = (y + 9800) / 98;
+    // console.log(pixelsCount);
+
+    // console.log(y);
+  }
+
   return (
     <div
       id="image-holder"
@@ -39,6 +58,8 @@ export default function RobotHeroHolder() {
         <div
           id="home-file-search-icons"
           className="absolute top-1/2 -left-14 hidden lg:flex gap-8 px-8 py-7 rounded-2xl backdrop-blur-md bg-gray-500/20 items-center border-[1px] border-gray-500/20"
+          style={{ top: "150px" }}
+          ref={myRef2}
         >
           <img src={home} alt="" />
           <img src={file} alt="" />
@@ -48,7 +69,9 @@ export default function RobotHeroHolder() {
 
         <div
           id="code-generation-icon-section"
-          className="hidden lg:flex absolute top-1/4 -right-14 gap-4 px-5 py-5 rounded-2xl backdrop-blur-md bg-gray-500/20 items-center border-[1px] border-gray-500/20"
+          className="hidden lg:flex absolute -right-14 gap-4 px-5 py-5 rounded-2xl backdrop-blur-md bg-gray-500/20 items-center border-[1px] border-gray-500/20"
+          ref={myRef}
+          style={{ top: "50px" }}
         >
           <img src={notifImage1} alt="" className="h-14 rounded-xl" />
           <div className="flex flex-col gap-1">
