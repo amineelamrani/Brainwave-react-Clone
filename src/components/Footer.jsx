@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="footer flex justify-between bg-primary-content text-neutral-content items-center p-4 border-t-[1px] border-gray-500/50 relative">
+    <footer className="footer flex flex-col sm:flex-row justify-between bg-primary-content text-neutral-content items-center p-4 sm:border-t-[1px] border-gray-500/50 relative">
       <p className="hidden md:flex absolute -top-4 -left-2 text-xl font-bold">
         +
       </p>
@@ -12,7 +12,7 @@ export default function Footer() {
       <aside className=" items-center">
         <p>© {new Date().getFullYear()} - All right reserved</p>
       </aside>
-      <nav className="flex gap-4 place-self-center justify-self-end">
+      <nav className="flex gap-4 place-self-center justify-between justify-self-end">
         <a>
           <svg
             xmlns="http://www.w3.org/2000/svg"
