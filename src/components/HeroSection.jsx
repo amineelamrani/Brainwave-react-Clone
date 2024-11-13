@@ -68,7 +68,7 @@ export default function HeroSection() {
           <img src={heroBg} alt="" className="w-full" />
         </div>
 
-        <div className="absolute top-0 right-0 left-0 z-10 bottom-0 bg-gradient-to-t from-primary-content/80 to-transparent"></div>
+        <div className="absolute top-0 right-0 left-0 z-10 bottom-0 bg-gradient-to-t from-primary-content to-transparent"></div>
 
         <div
           id="stars-background-holder"

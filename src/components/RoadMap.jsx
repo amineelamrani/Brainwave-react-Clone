@@ -5,10 +5,11 @@ import image1 from "../assets/roadmap/image-1.png";
 import image2 from "../assets/roadmap/image-2.png";
 import image3 from "../assets/roadmap/image-3.png";
 import image4 from "../assets/roadmap/image-4.png";
+import gradientEffect from "../assets/gradient.png";
 
 export default function RoadMap() {
   return (
-    <div className="container mx-auto w-full px-10 pb-24 flex flex-col items-center">
+    <div className="container mx-auto w-full px-10 pb-24 flex flex-col items-center relative">
       <p className="text-xl text-center pt-10">[ ready to get started ]</p>
       <h1 className="text-white text-3xl lg:text-7xl text-center text-wrap leading-tight pt-5 pb-10">
         What we're working on
@@ -39,6 +40,9 @@ export default function RoadMap() {
         />
       </div>
       <SignInButton text="our roadmap" />
+      <div className="absolute top-24 -left-96 opacity-15">
+        <img src={gradientEffect} alt="" className="h-[700px]" />
+      </div>
     </div>
   );
 }

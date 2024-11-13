@@ -15,8 +15,8 @@ import brainwaveLogo from "../assets/brainwave-symbol-white.svg";
 
 export default function ServicesSection() {
   return (
-    <div className="container mx-auto w-full h-full px-10">
-      <h1 className="text-white text-3xl lg:text-7xl text-center text-wrap leading-tight pb-5 md:mx-40 lg:mx-64">
+    <div className="container mx-auto w-full h-full">
+      <h1 className="text-white text-3xl lg:text-7xl text-center text-wrap leading-tight pb-5">
         Generative AI made for creators.
       </h1>
       <p className="pb-16 text-center text-xl">

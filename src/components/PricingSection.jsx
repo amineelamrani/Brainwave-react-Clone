@@ -4,7 +4,7 @@ import PricingElement from "./PricingElement";
 
 export default function PricingSection() {
   return (
-    <div className="container mx-auto w-full flex flex-col justify-center px-10">
+    <div className="container mx-auto w-full flex flex-col justify-center px-8 md:px-auto">
       <div
         id="Pricing-Picture-shown-large-screen"
         className="hidden lg:flex justify-center py-24"
@@ -21,7 +21,7 @@ export default function PricingSection() {
         </h1>
         <div
           id="pricing-plans-section"
-          className="w-full flex flex-col md:flex-row gap-2"
+          className="w-full flex flex-col md:flex-row gap-2 lg:px-24"
         >
           <PricingElement
             plan="Basic"
@@ -54,7 +54,7 @@ export default function PricingSection() {
             ]}
           />
         </div>
-        <p className="uppercase text-center my-10 text-white font-bold underline underline-offset-4 cursor-pointer">
+        <p className="uppercase text-center my-10 text-white text-xs font-bold underline underline-offset-4 cursor-pointer">
           SEE the full details
         </p>
       </div>
