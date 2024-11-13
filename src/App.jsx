@@ -11,8 +11,8 @@ export default function App() {
   return (
     <>
       <NavBar />
-      <div className="pt-24 px-8">
-        <div className="border-l-[1px] border-r-[1px] border-b-[1px] border-gray-500/50">
+      <div className="pt-14 sm:pt-24 px-0 sm:px-8">
+        <div className="sm:border-l-[1px] sm:border-r-[1px] sm:border-b-[1px] sm:border-gray-500/50">
           <HeroSection />
           <BenefitsSection />
           <Collaboration />

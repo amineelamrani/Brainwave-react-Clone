@@ -6,9 +6,12 @@ import curve2 from "../assets/collaboration/curve-2.svg";
 
 export default function Collaboration() {
   return (
-    <div className="container relative flex flex-col lg:flex-row gap-24 mx-auto w-full py-24 px-10 md:px-24">
-      <div id="Seamless-collaboration" className="w-full lg:w-1/2 py-10">
-        <h1 className="text-5xl text-white font-bold pb-10">
+    <div className="container relative flex flex-col lg:flex-row gap-14 lg:gap-24 mx-auto w-full py-14 lg:py-24 px-10 md:px-24">
+      <div
+        id="Seamless-collaboration"
+        className="w-full lg:w-1/2 pt-5 lg:pt-10"
+      >
+        <h1 className="text-3xl sm:text-5xl text-white font-bold pb-10">
           AI Chat App for seamless collaboration
         </h1>
         <ul>
@@ -35,7 +38,7 @@ export default function Collaboration() {
           <SignInButton text="TRY IT NOW" />
         </div>
       </div>
-      <div id="collaboration-representation" className="w-full lg:w-1/2 py-10">
+      <div id="collaboration-representation" className="w-full lg:w-1/2 pb-10">
         <p>
           With smart automation and top-notch security, it's the perfect
           solution for teams looking to work smarter.

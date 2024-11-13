@@ -9,9 +9,11 @@ import gradientEffect from "../assets/gradient.png";
 
 export default function RoadMap() {
   return (
-    <div className="container mx-auto w-full px-10 pb-24 flex flex-col items-center relative">
-      <p className="text-xl text-center pt-10">[ ready to get started ]</p>
-      <h1 className="text-white text-3xl lg:text-7xl text-center text-wrap leading-tight pt-5 pb-10">
+    <div className="container mx-auto w-full px-5 sm:px-10 pb-24 flex flex-col items-center relative">
+      <p className="text-base lg:text-xl text-center pt-5">
+        [ ready to get started ]
+      </p>
+      <h1 className="text-white text-3xl sm:text-5xl lg:text-7xl text-center text-wrap leading-tight pt-1 pb-10">
         What we're working on
       </h1>
       <div className="mb-14 md:mb-44 w-full flex flex-row flex-wrap">

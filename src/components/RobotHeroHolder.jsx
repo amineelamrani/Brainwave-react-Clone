@@ -25,7 +25,7 @@ export default function RobotHeroHolder() {
     let y = document.documentElement.scrollTop;
     if (y < 500) {
       myRef.current.style.top = `${y / 4 + 50}px`;
-      myRef2.current.style.top = `${y / 4 + 150}px`;
+      myRef2.current.style.top = `${y / 4 + 100}px`;
     }
   }
 
@@ -34,17 +34,17 @@ export default function RobotHeroHolder() {
       id="image-holder"
       className="relative h-[32rem] w-full mx-auto rounded-3xl"
     >
-      <div className="bg-gradient-to-tr from-yellow-200 to-pink-600 h-[32rem] w-full rounded-3xl">
-        <div className="h-10 backdrop-blur-xl bg-primary-content/80 rounded-t-3xl mx-1 translate-y-1"></div>
-        <div className="h-[29rem] backdrop-blur-xl bg-primary-content/50 mx-24 rounded-b-3xl"></div>
+      <div className="bg-gradient-to-tr from-yellow-200 to-pink-600 h-[31.60rem] w-full rounded-3xl">
+        <div className="h-10 backdrop-blur-xl bg-primary-content/80 rounded-t-3xl mx-[1px] sm:mx-1 translate-y-[1px]"></div>
+        <div className="h-[29rem] backdrop-blur-xl bg-primary-content/50 mx-8 sm:mx-24 rounded-b-3xl"></div>
 
-        <div className="h-[27rem] backdrop-blur-3xl bg-primary-content/80  mx-10 translate-y-[-29rem] rounded-b-3xl"></div>
+        <div className="h-[27rem] backdrop-blur-3xl bg-primary-content/80 mx-4 sm:mx-10 translate-y-[-29rem] rounded-b-3xl"></div>
       </div>
       <div
-        className="absolute flex justify-center items-end top-10 left-1 right-1 h-[25rem] bg-cover bg-no-repeat bg-center rounded-b-3xl"
+        className="absolute flex justify-center items-end top-10 left-[1px] sm:left-1 right-[1px] sm:right-1 h-[25rem] bg-cover bg-no-repeat bg-center rounded-b-3xl"
         style={{ backgroundImage: `url(${robotImg})` }}
       >
-        <div className="flex gap-3 bg-black/70 w-72 lg:w-96 px-5 py-3 rounded-3xl mb-8 text-white text-xl items-center">
+        <div className="flex gap-3 bg-black/70 w-11/12 sm:w-72 lg:w-96 px-5 py-3 rounded-3xl mb-8 text-white text-xl items-center">
           <img src={loading01} alt="" className="h-5" />
           <p>AI is generating</p>
         </div>
@@ -52,7 +52,7 @@ export default function RobotHeroHolder() {
         <div
           id="home-file-search-icons"
           className="absolute top-1/2 -left-14 hidden lg:flex gap-8 px-8 py-7 rounded-2xl backdrop-blur-md bg-gray-500/20 items-center border-[1px] border-gray-500/20"
-          style={{ top: "150px" }}
+          style={{ top: "100px" }}
           ref={myRef2}
         >
           <img src={home} alt="" />

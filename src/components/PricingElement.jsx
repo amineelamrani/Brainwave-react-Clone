@@ -17,7 +17,7 @@ export default function PricingElement({ plan, price, description, features }) {
           plan === "Enterprise" && "invisible"
         }`}
       >
-        $<span className="text-8xl">{price}</span>
+        $<span className="text-7xl">{price}</span>
       </h3>
       {(plan === "Basic" || plan === "Premium") && (
         <button className="text-primary-content bg-white w-full py-2 rounded-xl font-bold hover:text-primary mb-8">

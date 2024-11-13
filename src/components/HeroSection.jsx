@@ -24,9 +24,9 @@ export default function HeroSection() {
       <div className="mx-auto flex flex-col relative items-center overflow-y-clip ">
         <div
           id="top-layer text-and-image"
-          className="container pt-36 flex flex-col items-center px-14 md:px-24 lg:px-36 justify-center z-30 "
+          className="container pt-36 flex flex-col items-center px-5 sm:px-14 md:px-24 lg:px-36 justify-center z-30 "
         >
-          <h1 className="text-white text-7xl font-bold text-center text-wrap  leading-tight ">
+          <h1 className="text-white text-5xl lg:text-7xl font-bold text-center text-wrap leading-tight ">
             Explore the Possibilites of AI Chatting with{" "}
             <span
               className="bg-contain bg-no-repeat bg-bottom pb-2"
@@ -36,7 +36,7 @@ export default function HeroSection() {
             </span>
           </h1>
 
-          <p className="pt-10 pb-16 text-center text-2xl">
+          <p className="pt-10 pb-6 sm:pb-16 text-center text-base lg:text-2xl">
             Unleash the power of AI within Brainwave. Upgrade your productivity
             with Brainwave, the open AI chat app.
           </p>
@@ -47,11 +47,11 @@ export default function HeroSection() {
 
           <RobotHeroHolder />
 
-          <div className="hidden lg:flex lg:flex-col py-5 items-center">
+          <div className="hidden lg:flex lg:flex-col py-5 items-center w-full">
             <h2 className="uppercase font-bold text-neutral-content text-xl py-14">
               Helping people create beautiful content at
             </h2>
-            <div className="flex justify-between w-full gap-10">
+            <div className="flex justify-between w-full">
               <img src={yourlogo} alt="" />
               <img src={yourlogo} alt="" />
               <img src={yourlogo} alt="" />

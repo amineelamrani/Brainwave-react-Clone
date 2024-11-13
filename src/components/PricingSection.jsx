@@ -16,7 +16,7 @@ export default function PricingSection() {
         <p className="text-base text-center pt-5">
           [ Get started with brainwave ]
         </p>
-        <h1 className="text-white text-3xl lg:text-7xl text-center text-wrap leading-tight pb-14">
+        <h1 className="text-white text-3xl sm:text-5xl lg:text-7xl text-center text-wrap leading-tight pb-14">
           Pay once, use forever
         </h1>
         <div

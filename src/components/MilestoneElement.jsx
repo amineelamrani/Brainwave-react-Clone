@@ -13,7 +13,9 @@ export default function MilestoneElement({
   const progress = wrapIt ? "IN PROGRESS" : "DONE";
   return (
     <div
-      className={`px-2 py-1 w-full md:w-1/2 ${wrapIt && "md:translate-y-24"}`}
+      className={` sm:px-2 py-1 w-full md:w-1/2 ${
+        wrapIt && "md:translate-y-24"
+      }`}
     >
       {highlighted && (
         <MultiColorCover>
@@ -39,7 +41,7 @@ export default function MilestoneElement({
         </MultiColorCover>
       )}
       {!highlighted && (
-        <div className="rounded-3xl border-[1px] border-gray-500 p-10 flex flex-col relative bg-gradient-to-t from-black/50 to-black/0">
+        <div className="rounded-3xl border-[1px] border-gray-500/50 p-10 flex flex-col relative bg-gradient-to-t from-black/50 to-black/0">
           <div className="flex justify-between">
             <p className="uppercase">[ may 2023 ]</p>
             <div className="flex bg-white px-3 py-1 rounded-lg text-black gap-2">

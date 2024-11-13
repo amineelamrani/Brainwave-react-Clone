@@ -15,16 +15,16 @@ import brainwaveLogo from "../assets/brainwave-symbol-white.svg";
 
 export default function ServicesSection() {
   return (
-    <div className="container mx-auto w-full h-full">
-      <h1 className="text-white text-3xl lg:text-7xl text-center text-wrap leading-tight pb-5">
+    <div className="container mx-auto w-full h-full px-5">
+      <h1 className="text-white text-3xl sm:text-5xl lg:text-7xl text-center text-wrap leading-tight pb-5">
         Generative AI made for creators.
       </h1>
-      <p className="pb-16 text-center text-xl">
+      <p className="pb-16 text-center text-base sm:text-xl">
         Brainwave unlocks the potential of AI-powered applications
       </p>
       <div
         id="first-image"
-        className="border-[1px] border-gray-500 relative w-full flex justify-end rounded-2xl"
+        className="border-[1px] border-gray-500 relative w-full flex justify-end rounded-2xl lg:overflow-hidden sm:bg-none bg-cover bg-no-repeat bg-center bg-service"
       >
         {/* div for the image make it absolute
         div for the content also absolute
@@ -33,12 +33,12 @@ export default function ServicesSection() {
         <img
           src={service1}
           alt=""
-          className="absolute top-0 bottom-0 left-0 w-full md:w-1/2 h-full z-10"
+          className="absolute hidden sm:block top-0 bottom-0 left-0 lg:-left-24 w-full md:w-3/4 lg:w-3/5 h-full z-10"
         />
         <img
           src={gradientEffect}
           alt=""
-          className="absolute top-0 bottom-0 left-0 w-full md:w-1/2 h-full z-0"
+          className="absolute hidden sm:block top-0 bottom-0 left-0 w-full md:w-1/2 h-full z-0"
         />
         <div className="py-32 md:py-44 z-20 pr-0 md:pr-16 flex w-3/4 md:w-5/12 flex-col">
           <h1 className="text-3xl text-white font-bold pb-5">Smartest AI</h1>
